@@ -3,7 +3,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  dotnetSdkVersion: '2.1.505'
+  dotnetSdkVersion: '3.0.100'
 
 steps:
 - task: DotNetCoreInstaller@0
@@ -31,8 +31,8 @@ steps:
     projects: '**/*.csproj'
     arguments: '--no-build --configuration $(buildConfiguration)'
     versioningScheme: byPrereleaseNumber
-    majorVersion: '1'
-    minorVersion: '0'
+    majorVersion: '2'
+    minorVersion: '1'
     patchVersion: '0'
  
 - task: NuGetCommand@2
